@@ -1,0 +1,1678 @@
+[
+    {
+        "message": "Everything is running smoothly.",
+        "keywords": [
+            "running",
+            "smoothly"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "We have a call scheduled today.",
+        "keywords": [
+            "call",
+            "scheduled"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Please submit the document.",
+        "keywords": [
+            "submit",
+            "document"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "The quality is very poor.",
+        "keywords": [
+            "quality",
+            "poor"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Great job on the project!",
+        "keywords": [
+            "great",
+            "job",
+            "project"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The updates look perfect.",
+        "keywords": [
+            "updates",
+            "perfect"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "I am unhappy with the results.",
+        "keywords": [
+            "unhappy",
+            "results"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "I love the new design.",
+        "keywords": [
+            "love",
+            "new",
+            "design"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "We have a serious issue here.",
+        "keywords": [
+            "serious",
+            "issue"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "The updates look perfect.",
+        "keywords": [
+            "updates",
+            "perfect"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "I love the new design.",
+        "keywords": [
+            "love",
+            "new",
+            "design"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The report is not correct.",
+        "keywords": [
+            "report",
+            "not correct"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "We have a serious issue here.",
+        "keywords": [
+            "serious",
+            "issue"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Not satisfied with the current progress.",
+        "keywords": [
+            "not",
+            "satisfied",
+            "progress"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "The client is satisfied.",
+        "keywords": [
+            "client",
+            "satisfied"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "I'm impressed with the progress.",
+        "keywords": [
+            "impressed",
+            "progress"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "This project needs urgent attention.",
+        "keywords": [
+            "project",
+            "urgent",
+            "attention"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Deadlines are being missed frequently.",
+        "keywords": [
+            "deadlines",
+            "missed",
+            "frequently"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "I'm impressed with the progress.",
+        "keywords": [
+            "impressed",
+            "progress"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The meeting is scheduled for 3 PM.",
+        "keywords": [
+            "meeting",
+            "scheduled"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Everything is fine and working well.",
+        "keywords": [
+            "fine",
+            "working",
+            "well"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The client is satisfied.",
+        "keywords": [
+            "client",
+            "satisfied"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "We will discuss this in tomorrow's meeting.",
+        "keywords": [
+            "discuss",
+            "tomorrow",
+            "meeting"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Excellent work by the team.",
+        "keywords": [
+            "excellent",
+            "work",
+            "team"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Great job on the project!",
+        "keywords": [
+            "great",
+            "job",
+            "project"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Deadlines are being missed frequently.",
+        "keywords": [
+            "deadlines",
+            "missed",
+            "frequently"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "We will discuss this in tomorrow's meeting.",
+        "keywords": [
+            "discuss",
+            "tomorrow",
+            "meeting"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Everything is fine and working well.",
+        "keywords": [
+            "fine",
+            "working",
+            "well"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Please update me on the progress.",
+        "keywords": [
+            "update",
+            "progress"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "The errors are too many.",
+        "keywords": [
+            "errors",
+            "many"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "The deadline is next week.",
+        "keywords": [
+            "deadline",
+            "next week"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Everything is running smoothly.",
+        "keywords": [
+            "running",
+            "smoothly"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Deadlines are being missed frequently.",
+        "keywords": [
+            "deadlines",
+            "missed",
+            "frequently"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "This work is unacceptable.",
+        "keywords": [
+            "work",
+            "unacceptable"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "The quality is very poor.",
+        "keywords": [
+            "quality",
+            "poor"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Great job on the project!",
+        "keywords": [
+            "great",
+            "job",
+            "project"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "I am unhappy with the results.",
+        "keywords": [
+            "unhappy",
+            "results"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "The updates look perfect.",
+        "keywords": [
+            "updates",
+            "perfect"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The client is satisfied.",
+        "keywords": [
+            "client",
+            "satisfied"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The quality is very poor.",
+        "keywords": [
+            "quality",
+            "poor"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Everything is fine and working well.",
+        "keywords": [
+            "fine",
+            "working",
+            "well"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The deadline is next week.",
+        "keywords": [
+            "deadline",
+            "next week"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "We have a serious issue here.",
+        "keywords": [
+            "serious",
+            "issue"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "We have a serious issue here.",
+        "keywords": [
+            "serious",
+            "issue"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "This project needs urgent attention.",
+        "keywords": [
+            "project",
+            "urgent",
+            "attention"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "I am disappointed with the delay.",
+        "keywords": [
+            "disappointed",
+            "delay"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "We have a serious issue here.",
+        "keywords": [
+            "serious",
+            "issue"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "I am disappointed with the delay.",
+        "keywords": [
+            "disappointed",
+            "delay"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Please review the attached file.",
+        "keywords": [
+            "review",
+            "attached",
+            "file"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Excellent work by the team.",
+        "keywords": [
+            "excellent",
+            "work",
+            "team"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "No major issues reported.",
+        "keywords": [
+            "no",
+            "issues",
+            "reported"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Please update me on the progress.",
+        "keywords": [
+            "update",
+            "progress"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "The deadline is next week.",
+        "keywords": [
+            "deadline",
+            "next week"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "The updates look perfect.",
+        "keywords": [
+            "updates",
+            "perfect"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Please update me on the progress.",
+        "keywords": [
+            "update",
+            "progress"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "The updates look perfect.",
+        "keywords": [
+            "updates",
+            "perfect"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Everything is running smoothly.",
+        "keywords": [
+            "running",
+            "smoothly"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The system is functioning normally.",
+        "keywords": [
+            "system",
+            "functioning",
+            "normally"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "We have a serious issue here.",
+        "keywords": [
+            "serious",
+            "issue"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Please review the attached file.",
+        "keywords": [
+            "review",
+            "attached",
+            "file"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "This project needs urgent attention.",
+        "keywords": [
+            "project",
+            "urgent",
+            "attention"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "The updates look perfect.",
+        "keywords": [
+            "updates",
+            "perfect"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "I am unhappy with the results.",
+        "keywords": [
+            "unhappy",
+            "results"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "The system is functioning normally.",
+        "keywords": [
+            "system",
+            "functioning",
+            "normally"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "I am very happy with the results.",
+        "keywords": [
+            "happy",
+            "results"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The updates look perfect.",
+        "keywords": [
+            "updates",
+            "perfect"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The report is not correct.",
+        "keywords": [
+            "report",
+            "not correct"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Everything is running smoothly.",
+        "keywords": [
+            "running",
+            "smoothly"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "I am very happy with the results.",
+        "keywords": [
+            "happy",
+            "results"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Everything is fine and working well.",
+        "keywords": [
+            "fine",
+            "working",
+            "well"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Everything is fine and working well.",
+        "keywords": [
+            "fine",
+            "working",
+            "well"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "We need to discuss the requirements.",
+        "keywords": [
+            "discuss",
+            "requirements"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Please submit the document.",
+        "keywords": [
+            "submit",
+            "document"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "This project needs urgent attention.",
+        "keywords": [
+            "project",
+            "urgent",
+            "attention"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "The deadline is next week.",
+        "keywords": [
+            "deadline",
+            "next week"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Not satisfied with the current progress.",
+        "keywords": [
+            "not",
+            "satisfied",
+            "progress"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "The errors are too many.",
+        "keywords": [
+            "errors",
+            "many"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Great job on the project!",
+        "keywords": [
+            "great",
+            "job",
+            "project"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The quality is very poor.",
+        "keywords": [
+            "quality",
+            "poor"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "The deadline is next week.",
+        "keywords": [
+            "deadline",
+            "next week"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "The report is not correct.",
+        "keywords": [
+            "report",
+            "not correct"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Everything is fine and working well.",
+        "keywords": [
+            "fine",
+            "working",
+            "well"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "I'm impressed with the progress.",
+        "keywords": [
+            "impressed",
+            "progress"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Not satisfied with the current progress.",
+        "keywords": [
+            "not",
+            "satisfied",
+            "progress"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Everything is running smoothly.",
+        "keywords": [
+            "running",
+            "smoothly"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The client is satisfied.",
+        "keywords": [
+            "client",
+            "satisfied"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The updates look perfect.",
+        "keywords": [
+            "updates",
+            "perfect"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "I am disappointed with the delay.",
+        "keywords": [
+            "disappointed",
+            "delay"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "We have a call scheduled today.",
+        "keywords": [
+            "call",
+            "scheduled"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "We have a call scheduled today.",
+        "keywords": [
+            "call",
+            "scheduled"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Great job on the project!",
+        "keywords": [
+            "great",
+            "job",
+            "project"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "We need to discuss the requirements.",
+        "keywords": [
+            "discuss",
+            "requirements"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "I am unhappy with the results.",
+        "keywords": [
+            "unhappy",
+            "results"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Not satisfied with the current progress.",
+        "keywords": [
+            "not",
+            "satisfied",
+            "progress"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "We will discuss this in tomorrow's meeting.",
+        "keywords": [
+            "discuss",
+            "tomorrow",
+            "meeting"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Everything is fine and working well.",
+        "keywords": [
+            "fine",
+            "working",
+            "well"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The client is satisfied.",
+        "keywords": [
+            "client",
+            "satisfied"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "We will discuss this in tomorrow's meeting.",
+        "keywords": [
+            "discuss",
+            "tomorrow",
+            "meeting"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Everything is fine and working well.",
+        "keywords": [
+            "fine",
+            "working",
+            "well"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "We need to discuss the requirements.",
+        "keywords": [
+            "discuss",
+            "requirements"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "The meeting is scheduled for 3 PM.",
+        "keywords": [
+            "meeting",
+            "scheduled"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "This work is unacceptable.",
+        "keywords": [
+            "work",
+            "unacceptable"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Everything is running smoothly.",
+        "keywords": [
+            "running",
+            "smoothly"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The deadline is next week.",
+        "keywords": [
+            "deadline",
+            "next week"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "I am disappointed with the delay.",
+        "keywords": [
+            "disappointed",
+            "delay"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Please review the attached file.",
+        "keywords": [
+            "review",
+            "attached",
+            "file"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "I am unhappy with the results.",
+        "keywords": [
+            "unhappy",
+            "results"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Deadlines are being missed frequently.",
+        "keywords": [
+            "deadlines",
+            "missed",
+            "frequently"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Please review the attached file.",
+        "keywords": [
+            "review",
+            "attached",
+            "file"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Please submit the document.",
+        "keywords": [
+            "submit",
+            "document"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Please review the attached file.",
+        "keywords": [
+            "review",
+            "attached",
+            "file"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "The client is satisfied.",
+        "keywords": [
+            "client",
+            "satisfied"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The errors are too many.",
+        "keywords": [
+            "errors",
+            "many"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Everything is fine and working well.",
+        "keywords": [
+            "fine",
+            "working",
+            "well"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Excellent work by the team.",
+        "keywords": [
+            "excellent",
+            "work",
+            "team"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Please submit the document.",
+        "keywords": [
+            "submit",
+            "document"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "I love the new design.",
+        "keywords": [
+            "love",
+            "new",
+            "design"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The deadline is next week.",
+        "keywords": [
+            "deadline",
+            "next week"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "No major issues reported.",
+        "keywords": [
+            "no",
+            "issues",
+            "reported"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Good job completing the task on time.",
+        "keywords": [
+            "good",
+            "task",
+            "time"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "I love the new design.",
+        "keywords": [
+            "love",
+            "new",
+            "design"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Not satisfied with the current progress.",
+        "keywords": [
+            "not",
+            "satisfied",
+            "progress"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Good job completing the task on time.",
+        "keywords": [
+            "good",
+            "task",
+            "time"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The updates look perfect.",
+        "keywords": [
+            "updates",
+            "perfect"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Everything is running smoothly.",
+        "keywords": [
+            "running",
+            "smoothly"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Please update me on the progress.",
+        "keywords": [
+            "update",
+            "progress"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "The deadline is next week.",
+        "keywords": [
+            "deadline",
+            "next week"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "We have a serious issue here.",
+        "keywords": [
+            "serious",
+            "issue"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "This work is unacceptable.",
+        "keywords": [
+            "work",
+            "unacceptable"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Deadlines are being missed frequently.",
+        "keywords": [
+            "deadlines",
+            "missed",
+            "frequently"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "This work is unacceptable.",
+        "keywords": [
+            "work",
+            "unacceptable"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "We will discuss this in tomorrow's meeting.",
+        "keywords": [
+            "discuss",
+            "tomorrow",
+            "meeting"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "I am unhappy with the results.",
+        "keywords": [
+            "unhappy",
+            "results"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "This project needs urgent attention.",
+        "keywords": [
+            "project",
+            "urgent",
+            "attention"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "No major issues reported.",
+        "keywords": [
+            "no",
+            "issues",
+            "reported"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "I love the new design.",
+        "keywords": [
+            "love",
+            "new",
+            "design"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "I'm impressed with the progress.",
+        "keywords": [
+            "impressed",
+            "progress"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "I am very happy with the results.",
+        "keywords": [
+            "happy",
+            "results"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "I'm impressed with the progress.",
+        "keywords": [
+            "impressed",
+            "progress"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The deadline is next week.",
+        "keywords": [
+            "deadline",
+            "next week"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "No major issues reported.",
+        "keywords": [
+            "no",
+            "issues",
+            "reported"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "The errors are too many.",
+        "keywords": [
+            "errors",
+            "many"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "I am very happy with the results.",
+        "keywords": [
+            "happy",
+            "results"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "We need to discuss the requirements.",
+        "keywords": [
+            "discuss",
+            "requirements"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "The client is satisfied.",
+        "keywords": [
+            "client",
+            "satisfied"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "I am disappointed with the delay.",
+        "keywords": [
+            "disappointed",
+            "delay"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "The client is satisfied.",
+        "keywords": [
+            "client",
+            "satisfied"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "We have a call scheduled today.",
+        "keywords": [
+            "call",
+            "scheduled"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "This work is unacceptable.",
+        "keywords": [
+            "work",
+            "unacceptable"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "We need to discuss the requirements.",
+        "keywords": [
+            "discuss",
+            "requirements"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "The meeting is scheduled for 3 PM.",
+        "keywords": [
+            "meeting",
+            "scheduled"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "We will discuss this in tomorrow's meeting.",
+        "keywords": [
+            "discuss",
+            "tomorrow",
+            "meeting"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "I am unhappy with the results.",
+        "keywords": [
+            "unhappy",
+            "results"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Good job completing the task on time.",
+        "keywords": [
+            "good",
+            "task",
+            "time"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Everything is running smoothly.",
+        "keywords": [
+            "running",
+            "smoothly"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "I am unhappy with the results.",
+        "keywords": [
+            "unhappy",
+            "results"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "I am unhappy with the results.",
+        "keywords": [
+            "unhappy",
+            "results"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "The updates look perfect.",
+        "keywords": [
+            "updates",
+            "perfect"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "No major issues reported.",
+        "keywords": [
+            "no",
+            "issues",
+            "reported"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "We have a serious issue here.",
+        "keywords": [
+            "serious",
+            "issue"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Great job on the project!",
+        "keywords": [
+            "great",
+            "job",
+            "project"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Please review the attached file.",
+        "keywords": [
+            "review",
+            "attached",
+            "file"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Excellent work by the team.",
+        "keywords": [
+            "excellent",
+            "work",
+            "team"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Deadlines are being missed frequently.",
+        "keywords": [
+            "deadlines",
+            "missed",
+            "frequently"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "This work is unacceptable.",
+        "keywords": [
+            "work",
+            "unacceptable"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "I am unhappy with the results.",
+        "keywords": [
+            "unhappy",
+            "results"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Deadlines are being missed frequently.",
+        "keywords": [
+            "deadlines",
+            "missed",
+            "frequently"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "I'm impressed with the progress.",
+        "keywords": [
+            "impressed",
+            "progress"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Good job completing the task on time.",
+        "keywords": [
+            "good",
+            "task",
+            "time"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The meeting is scheduled for 3 PM.",
+        "keywords": [
+            "meeting",
+            "scheduled"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "The system is functioning normally.",
+        "keywords": [
+            "system",
+            "functioning",
+            "normally"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "The report is not correct.",
+        "keywords": [
+            "report",
+            "not correct"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Good job completing the task on time.",
+        "keywords": [
+            "good",
+            "task",
+            "time"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The system is functioning normally.",
+        "keywords": [
+            "system",
+            "functioning",
+            "normally"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "This project needs urgent attention.",
+        "keywords": [
+            "project",
+            "urgent",
+            "attention"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "I am unhappy with the results.",
+        "keywords": [
+            "unhappy",
+            "results"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "I am unhappy with the results.",
+        "keywords": [
+            "unhappy",
+            "results"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "I am disappointed with the delay.",
+        "keywords": [
+            "disappointed",
+            "delay"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "We need to discuss the requirements.",
+        "keywords": [
+            "discuss",
+            "requirements"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Excellent work by the team.",
+        "keywords": [
+            "excellent",
+            "work",
+            "team"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "We need to discuss the requirements.",
+        "keywords": [
+            "discuss",
+            "requirements"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "This work is unacceptable.",
+        "keywords": [
+            "work",
+            "unacceptable"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "The meeting is scheduled for 3 PM.",
+        "keywords": [
+            "meeting",
+            "scheduled"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "The deadline is next week.",
+        "keywords": [
+            "deadline",
+            "next week"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "We will discuss this in tomorrow's meeting.",
+        "keywords": [
+            "discuss",
+            "tomorrow",
+            "meeting"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Everything is running smoothly.",
+        "keywords": [
+            "running",
+            "smoothly"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The meeting is scheduled for 3 PM.",
+        "keywords": [
+            "meeting",
+            "scheduled"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "Not satisfied with the current progress.",
+        "keywords": [
+            "not",
+            "satisfied",
+            "progress"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Everything is fine and working well.",
+        "keywords": [
+            "fine",
+            "working",
+            "well"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "We need to discuss the requirements.",
+        "keywords": [
+            "discuss",
+            "requirements"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "I am disappointed with the delay.",
+        "keywords": [
+            "disappointed",
+            "delay"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Everything is running smoothly.",
+        "keywords": [
+            "running",
+            "smoothly"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "The report is not correct.",
+        "keywords": [
+            "report",
+            "not correct"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "I am unhappy with the results.",
+        "keywords": [
+            "unhappy",
+            "results"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "Good job completing the task on time.",
+        "keywords": [
+            "good",
+            "task",
+            "time"
+        ],
+        "sentiment": "positive"
+    },
+    {
+        "message": "Deadlines are being missed frequently.",
+        "keywords": [
+            "deadlines",
+            "missed",
+            "frequently"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "This work is unacceptable.",
+        "keywords": [
+            "work",
+            "unacceptable"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "No major issues reported.",
+        "keywords": [
+            "no",
+            "issues",
+            "reported"
+        ],
+        "sentiment": "neutral"
+    },
+    {
+        "message": "The quality is very poor.",
+        "keywords": [
+            "quality",
+            "poor"
+        ],
+        "sentiment": "negative"
+    },
+    {
+        "message": "We will discuss this in tomorrow's meeting.",
+        "keywords": [
+            "discuss",
+            "tomorrow",
+            "meeting"
+        ],
+        "sentiment": "neutral"
+    }
+]
