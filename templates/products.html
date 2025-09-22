@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products | Shree Sai Home Appliances</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+  <style>
+    /* Small button style for Install */
+.btn-sm {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #0077cc; /* Blue background */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.btn-sm:hover {
+  background-color: #005fa3; /* Darker blue on hover */
+  transform: translateY(-2px);
+}
+
+/* Optional: spacing inside card-actions */
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Price styling */
+.price {
+  font-weight: bold;
+  color: #333;
+}
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-wrap">
+    <a class="brand" href="{{ url_for('index') }}">Shree Sai</a>
+    <button class="nav-toggle" aria-label="Toggle Menu">☰</button>
+    <ul class="nav-links">
+      <li><a class="active" href="{{ url_for('index') }}">Home</a></li>
+      <li><a href="{{ url_for('products') }}">Products</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      <li><a href="{{ url_for('about') }}">About</a></li>
+
+      {% if session.get('logged_in') %}
+        {% if session.get('is_admin') %}
+          <!-- Admin -->
+          <li><a href="{{ url_for('admin_dashboard') }}">Welcome, Admin</a></li>
+        {% else %}
+          <!-- Normal User -->
+          <li><a href="{{ url_for('products') }}">Welcome, {{ session['user_name'] }}</a></li>
+        {% endif %}
+        <li><a href="{{ url_for('logout') }}">Logout</a></li>
+      {% else %}
+        <li><a href="{{ url_for('login') }}">Login</a></li>
+      {% endif %}
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Products</h1>
+      <p>RO systems & kitchen chimneys available for sale and installation.</p>
+    </div>
+  </header>
+
+  <!-- Filters -->
+  <section class="container filters">
+    <input id="search" type="text" placeholder="Search: e.g., ‘RO 12L’ or ‘filterless chimney’" />
+    <select id="category">
+      <option value="">All Categories</option>
+      <option value="RO">RO</option>
+      <option value="Chimney">Kitchen Chimney</option>
+      <option value="Water Purifier">Water Purifier</option>
+    </select>
+    <select id="price_range">
+      <option value="">Price</option>
+      <option value="under10000">Under Rs.10,000</option>
+      <option value="10000to20000">Rs.10,000–Rs.20,000</option>
+      <option value="above20000">Above Rs.20,000</option>
+    </select>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="container grid-3" id="productGrid"></section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Shree Sai Home Appliances</div>
+  </footer>
+
+  <div id="chatbot-container">
+    <div id="chatbot-header">Chat with us</div>
+    <div id="chatbot-body">
+      <div id="chat-messages"></div>
+      <input type="text" id="chat-input" placeholder="Type a message...">
+      <button id="chat-send">Send</button>
+    </div>
+    <div id="chatbot-icon">💬</div>
+  </div>
+
+  <!-- JS to load products -->
+  <script>
+async function loadProducts() {
+  try {
+    const res = await fetch("/api/products");
+    if (!res.ok) throw new Error("Failed to fetch products");
+    const products = await res.json();
+    window.allProducts = products; // Save globally for filtering
+    renderProducts(products);
+  } catch (error) {
+    console.error("Error loading products:", error);
+  }
+}
+
+function renderProducts(products) {
+  const grid = document.getElementById("productGrid");
+  grid.innerHTML = "";
+
+  products.forEach(p => {
+    const card = document.createElement("div");
+    card.className = "card product";
+    card.dataset.category = p.category;
+
+    card.innerHTML = `
+      <img src="${p.image || '/static/default.png'}" alt="${p.name}" />
+      <h3>${p.name}</h3>
+      <p>${p.description || ''}</p>
+      <div class="card-actions">
+        <span class="price">₹${p.price}</span>
+        <a class="btn-sm" href="/install/${p.id}">Install</a>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+// Filter products based on search, category, and price
+function filterProducts() {
+  const searchValue = document.getElementById("search").value.toLowerCase();
+  const categoryValue = document.getElementById("category").value;
+  const priceValue = document.getElementById("price_range").value;
+
+  const filtered = window.allProducts.filter(p => {
+    let matchesSearch = p.name.toLowerCase().includes(searchValue) || (p.description && p.description.toLowerCase().includes(searchValue));
+    let matchesCategory = categoryValue === "" || p.category === categoryValue;
+    let matchesPrice = true;
+
+    if (priceValue === "under10000") matchesPrice = p.price < 10000;
+    else if (priceValue === "10000to20000") matchesPrice = p.price >= 10000 && p.price <= 20000;
+    else if (priceValue === "above20000") matchesPrice = p.price > 20000;
+
+    return matchesSearch && matchesCategory && matchesPrice;
+  });
+
+  renderProducts(filtered);
+}
+
+// Add event listeners
+document.getElementById("search").addEventListener("input", filterProducts);
+document.getElementById("category").addEventListener("change", filterProducts);
+document.getElementById("price_range").addEventListener("change", filterProducts);
+
+document.getElementById("year").textContent = new Date().getFullYear();
+loadProducts();
+</script>
+
+</body>
+</html>

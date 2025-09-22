@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shree Sai Home Appliances | Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<script defer src="{{ url_for('static', filename='script.js') }}"></script>
+
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="container">
+      <span>Shree Sai Home Appliances — RO & Kitchen Chimney Sales & Services</span>
+      <span>Maihar (M.P.) • Satna Road, Near Nigam Hospital</span>
+    </div>
+  </header>
+
+ <!-- Navbar -->
+<nav class="navbar">
+  <div class="container nav-wrap">
+    <a class="brand" href="{{ url_for('index') }}">Shree Sai</a>
+    <button class="nav-toggle" aria-label="Toggle Menu">☰</button>
+    <ul class="nav-links">
+      <li><a class="active" href="{{ url_for('index') }}">Home</a></li>
+      <li><a href="{{ url_for('products') }}">Products</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      <li><a href="{{ url_for('about') }}">About</a></li>
+
+      {% if session.get('logged_in') %}
+        {% if session.get('is_admin') %}
+          <!-- Admin -->
+          <li><a href="{{ url_for('admin_dashboard') }}">Welcome, Admin</a></li>
+        {% else %}
+          <!-- Normal User -->
+          <li><a href="{{ url_for('products') }}">Welcome, {{ session['user_name'] }}</a></li>
+        {% endif %}
+        <li><a href="{{ url_for('logout') }}">Logout</a></li>
+      {% else %}
+        <li><a href="{{ url_for('login') }}">Login</a></li>
+      {% endif %}
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Pure Water. Clean Kitchens.</h1>
+      <p>Trusted RO systems & kitchen chimneys with expert installation and service in Satna/Maihar.</p>
+      <div class="hero-actions">
+        <a class="btn" href="products">Browse Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="container grid-3 mt-lg">
+    <div class="card">
+      <h3>Certified RO Solutions</h3>
+      <p>From UV/UF to RO+UV+TDS control—options for every water type & budget.</p>
+    </div>
+    <div class="card">
+      <h3>Premium Chimneys</h3>
+      <p>Filterless, baffle, or cassette—choose what fits your kitchen size & cooking style.</p>
+    </div>
+    <div class="card">
+      <h3>Fast Service</h3>
+      <p>Installation, filter change, cleaning & repairs with quick turnaround.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Need installation or servicing?</h2>
+      <p>Book a slot online in minutes. We’ll confirm on call/WhatsApp.</p>
+      <a class="btn" href="services">Book Now</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> Shree Sai Home Appliances • All rights reserved.
+    </div>
+  </footer>
+  <div id="chatbot-container">
+    <div id="chatbot-header">Chat with us</div>
+    <div id="chatbot-body">
+      <div id="chat-messages"></div>
+      <input type="text" id="chat-input" placeholder="Type a message...">
+      <button id="chat-send">Send</button>
+    </div>
+    <div id="chatbot-icon">💬</div>
+  </div>
+
+
+
+</body>
+</html>

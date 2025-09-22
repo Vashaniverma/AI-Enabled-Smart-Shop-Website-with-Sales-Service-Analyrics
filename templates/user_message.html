@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Messages</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #fff;
+    }
+    .card {
+      border-radius: 12px;
+      background: #1f1f1f;
+    }
+    .sentiment-positive {
+      color: #28a745;
+      font-weight: bold;
+    }
+    .sentiment-negative {
+      color: #dc3545;
+      font-weight: bold;
+    }
+    .sentiment-neutral {
+      color: #ffc107;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="card p-3">
+      <div class="d-flex justify-content-between align-items-center">
+        <h3>User Messages</h3>
+        <!-- 🔙 Back Button -->
+        <a href="{{ url_for('admin_dashboard') }}" class="btn btn-secondary btn-sm">⬅ Back to Dashboard</a>
+      </div>
+
+      <table class="table table-dark table-hover mt-3">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>Message</th>
+            <th>Sentiment</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for msg in messages %}
+            <tr>
+              <td>{{ msg.id }}</td>
+              <td>{{ msg.name }}</td>
+              <td>{{ msg.email }}</td>
+              <td>{{ msg.message }}</td>
+              <td>
+                {% if msg.sentiment == "positive" %}
+                  <span class="sentiment-positive">😊 Positive</span>
+                {% elif msg.sentiment == "negative" %}
+                  <span class="sentiment-negative">😞 Negative</span>
+                {% else %}
+                  <span class="sentiment-neutral">😐 Neutral</span>
+                {% endif %}
+              </td>
+              <td>
+                <form action="{{ url_for('delete_message', msg_id=msg.id) }}" method="POST" style="display:inline;">
+                  <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this message?');">Delete</button>
+                </form>
+              </td>
+            </tr>
+          {% else %}
+            <tr>
+              <td colspan="6" class="text-center text-muted">No messages found</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

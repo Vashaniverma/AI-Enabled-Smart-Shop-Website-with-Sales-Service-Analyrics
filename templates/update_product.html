@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Update Product</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .form-container {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 12px;
+      width: 450px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      position: relative;
+    }
+    h2 {
+      text-align: center;
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: none;
+      background: #334155;
+      color: #f1f5f9;
+    }
+    textarea {
+      resize: none;
+      height: 80px;
+    }
+    .btn {
+      width: 48%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .btn-success { background: #22c55e; color: #fff; }
+    .btn-success:hover { background: #16a34a; }
+    .btn-secondary { background: #6b7280; color: #fff; }
+    .btn-secondary:hover { background: #4b5563; }
+    .btn-group {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Drag & Drop Image Upload */
+    .drop-zone {
+      margin-top: 10px;
+      padding: 20px;
+      border: 2px dashed #38bdf8;
+      border-radius: 8px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .drop-zone.dragover {
+      background: rgba(56, 189, 248, 0.1);
+    }
+    .drop-zone img {
+      margin-top: 10px;
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    /* Back button */
+    .back-btn {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: #6b7280;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .back-btn:hover {
+      background: #4b5563;
+    }
+    select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: none;
+  background: #334155;
+  color: #f1f5f9;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+select option {
+  background: #1e293b;
+  color: #f1f5f9;
+}
+
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <!-- Back button -->
+    <a href="{{ url_for('manage_products') }}" class="back-btn">⬅ Back</a>
+
+    <h2>Update Product</h2>
+    <form method="POST" enctype="multipart/form-data">
+      <label>Product Name</label>
+      <input type="text" name="name" value="{{ product.name }}" required>
+
+      <label>Category</label>
+      <select  name="category" value="{{ product.category }}" required>
+        <option value="RO">RO</option>
+        <option value="Chimney">Chimney</option>
+        <option value="Water Purifier">Water Purifier</option>
+      </select>
+
+      <label>Price</label>
+      <input type="number" step="0.01" name="price" value="{{ product.price }}" required>
+
+
+      <label>Description</label>
+      <textarea name="description" required>{{ product.description }}</textarea>
+
+      <label>Update Image</label>
+      <div class="drop-zone" id="drop-zone">
+        <span>Drag & Drop or Click to Upload</span>
+        <input type="file" name="image" id="file-input" hidden>
+
+        {% if product.image %}
+        <img id="preview" src="{{ url_for('static', filename='uploads/' ~ product.image.split('\\')[-1]) }}" alt="Product Image">
+        {% else %}
+         <img id="preview" src="" alt="">
+        {% endif %}
+
+      </div>
+
+      <div class="btn-group">
+        <button type="submit" class="btn btn-success" onclick="return confirm('Are you sure you want to update this product?');">Update</button>
+        <a href="{{ url_for('manage_products') }}" class="btn btn-secondary">Cancel</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const dropZone = document.getElementById("drop-zone");
+    const fileInput = document.getElementById("file-input");
+    const preview = document.getElementById("preview");
+
+    dropZone.addEventListener("click", () => fileInput.click());
+    dropZone.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      dropZone.classList.add("dragover");
+    });
+    dropZone.addEventListener("dragleave", () => {
+      dropZone.classList.remove("dragover");
+    });
+    dropZone.addEventListener("drop", (e) => {
+      e.preventDefault();
+      fileInput.files = e.dataTransfer.files;
+      updatePreview(fileInput.files[0]);
+      dropZone.classList.remove("dragover");
+    });
+    fileInput.addEventListener("change", () => {
+      if (fileInput.files.length > 0) {
+        updatePreview(fileInput.files[0]);
+      }
+    });
+
+    function updatePreview(file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        preview.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+  </script>
+</body>
+</html>

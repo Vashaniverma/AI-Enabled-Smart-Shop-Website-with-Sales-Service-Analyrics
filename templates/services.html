@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services | Shree Sai Home Appliances</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar">
+  <div class="container nav-wrap">
+    <a class="brand" href="{{ url_for('index') }}">Shree Sai</a>
+    <button class="nav-toggle" aria-label="Toggle Menu">☰</button>
+    <ul class="nav-links">
+      <li><a class="active" href="{{ url_for('index') }}">Home</a></li>
+      <li><a href="{{ url_for('products') }}">Products</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      <li><a href="{{ url_for('about') }}">About</a></li>
+
+      {% if session.get('logged_in') %}
+        {% if session.get('is_admin') %}
+          <!-- Admin -->
+          <li><a href="{{ url_for('admin_dashboard') }}">Welcome, Admin</a></li>
+        {% else %}
+          <!-- Normal User -->
+          <li><a href="{{ url_for('products') }}">Welcome, {{ session['user_name'] }}</a></li>
+        {% endif %}
+        <li><a href="{{ url_for('logout') }}">Logout</a></li>
+      {% else %}
+        <li><a href="{{ url_for('login') }}">Login</a></li>
+      {% endif %}
+    </ul>
+  </div>
+</nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Book a Service</h1>
+      <p>Installation, filter replacement, cleaning & repairs.</p>
+    </div>
+  </header>
+
+  <section class="container grid-2">
+    <div class="card">
+      <h3>Popular Services</h3>
+      <ul class="list">
+        <li>RO Installation / Re-installation</li>
+        <li>RO Filter/Cartridge Replacement</li>
+        <li>Chimney Installation (60/90 cm)</li>
+        <li>Chimney Deep Cleaning / Auto-clean</li>
+      </ul>
+
+      {% if product_name %}
+      <div style="margin-top: 20px; text-align: center;">
+        <h4>Selected Product</h4>
+        <p><strong>{{ product_name }}</strong> (₹{{ product_price }})</p>
+        <!-- Show existing image -->
+        {% if product_image %}
+          <img src="{{ url_for('static', filename=('uploads/' + product_image.split('\\')[-1])) }}" alt="{{ product_name }}">
+        {% endif %}
+
+
+
+      </div>
+    {% endif %}
+    </div>
+
+    <form class="card form" method="POST" action="{{ url_for('services') }}">
+      <h3>Service Request Form</h3>
+
+      <label>
+        Full Name
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        Phone
+        <input type="tel" name="phone" required />
+      </label>
+      <label>
+        Service Type
+        <select name="service" required>
+          <option value="">Select</option>
+          <option>RO Installation</option>
+          <option>RO Filter Change</option>
+          <option>Chimney Installation</option>
+          <option>Chimney Cleaning</option>
+          <option>Repair Visit</option>
+        </select>
+      </label>
+      <label>
+        Preferred Date
+        <input type="date" name="date" required />
+      </label>
+      <label>
+        Address
+        <textarea name="address" rows="3" required></textarea>
+      </label>
+
+      <!-- Hidden fields for product info -->
+      <input type="hidden" name="product_id" value="{{ product_id or '' }}">
+      <input type="hidden" name="product_name" value="{{ product_name or '' }}">
+      <input type="hidden" name="product_price" value="{{ product_price or '' }}">
+      <button class="btn" type="submit">Submit Request</button>
+      <p class="muted" id="serviceMsg"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Shree Sai Home Appliances</div>
+  </footer>
+
+  <div id="chatbot-container">
+    <div id="chatbot-header">Chat with us</div>
+    <div id="chatbot-body">
+      <div id="chat-messages"></div>
+      <input type="text" id="chat-input" placeholder="Type a message...">
+      <button id="chat-send">Send</button>
+    </div>
+    <div id="chatbot-icon">💬</div>
+  </div>
+
+</body>
+</html>

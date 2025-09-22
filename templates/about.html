@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Shree Sai Home Appliances</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Shree Sai</a>
+      <button class="nav-toggle" aria-label="Toggle Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index">Home</a></li>
+        <li><a href="products">Products</a></li>
+        <li><a href="contact">Contact</a></li>
+        <li><a class="active" href="about">About</a></li>
+        {% if session.get('logged_in') %}
+          <li><a href="#">Welcome, {{ session['user_name'] }}</a></li>
+          <li><a href="{{ url_for('logout') }}">Logout</a></li>
+        {% else %}
+          <li><a href="{{ url_for('login') }}">Login</a></li>
+        {% endif %}
+
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>About the Shop</h1>
+      <p>Quality appliances, honest pricing, and reliable service.</p>
+    </div>
+  </header>
+
+  <section class="container grid-2">
+    <div class="card">
+      <h3>Who We Are</h3>
+      <p>Shree Sai Home Appliances serves Satna & Maihar with trusted RO systems and kitchen chimneys. We provide sales, installation, and post-sales service.</p>
+      <p><strong>Owner:</strong> Keshav Sharma</p>
+      <p><strong>Student Developer:</strong> Vashani Verma (B2255R10195018), CSE, AKS University</p>
+    </div>
+
+    <div class="card">
+      <h3>Why Choose Us</h3>
+      <ul class="list">
+        <li>Wide range of RO & chimney options</li>
+        <li>Expert installation & quick support</li>
+        <li>Genuine parts & fair pricing</li>
+        <li>Service reminders and online booking</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Shree Sai Home Appliances</div>
+  </footer>
+  <div id="chatbot-container">
+    <div id="chatbot-header">Chat with us</div>
+    <div id="chatbot-body">
+      <div id="chat-messages"></div>
+      <input type="text" id="chat-input" placeholder="Type a message...">
+      <button id="chat-send">Send</button>
+    </div>
+    <div id="chatbot-icon">💬</div>
+  </div>
+</body>
+</html>

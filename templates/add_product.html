@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Product</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #1e293b;
+      color: #f1f5f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .form-container {
+      background: #334155;
+      padding: 20px 30px;
+      border-radius: 12px;
+      width: 420px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      position: relative;
+    }
+    h2 {
+      text-align: center;
+      color: #38bdf8;
+    }
+    label {
+      font-size: 14px;
+      margin-top: 10px;
+      display: block;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: none;
+      background: #475569;
+      color: #f1f5f9;
+    }
+    textarea { resize: none; height: 80px; }
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #38bdf8;
+      color: #0f172a;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover { background: #0ea5e9; }
+
+    /* Drag & Drop Image Upload */
+    .drop-zone {
+      margin-top: 10px;
+      padding: 20px;
+      border: 2px dashed #38bdf8;
+      border-radius: 8px;
+      text-align: center;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .drop-zone.dragover {
+      background: rgba(56, 189, 248, 0.1);
+    }
+    .drop-zone img {
+      margin-top: 10px;
+      max-width: 100%;
+      border-radius: 8px;
+      display: none; /* Hidden until an image is uploaded */
+    }
+
+    /* Back button */
+    .back-btn {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: #6b7280;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .back-btn:hover {
+      background: #4b5563;
+    }
+    select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: none;
+  background: #475569; /* same as inputs */
+  color: #f1f5f9;
+  font-size: 14px;
+  cursor: pointer;
+  appearance: none; /* remove default arrow (optional) */
+}
+
+select option {
+  background: #334155; /* dropdown background */
+  color: #f1f5f9;      /* text color */
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <!-- Back to Dashboard button -->
+    <a href="{{ url_for('admin_dashboard') }}" class="back-btn">⬅ Back</a>
+
+    <h2>Add Product</h2>
+    <form method="POST" enctype="multipart/form-data">
+      <label>Product Name</label>
+      <input type="text" name="name" required>
+
+      <label>Price</label>
+      <input type="number" name="price" step="0.01" required>
+
+      <label>Description</label>
+      <textarea name="description"></textarea>
+
+      <label>Category</label>
+      <select name="category" required>
+        <option value="RO">RO</option>
+        <option value="Chimney">Chimney</option>
+        <option value="Water Purifier">Water Purifier</option>
+      </select>
+
+
+      <label>Upload Image</label>
+      <div class="drop-zone" id="drop-zone">
+        <span id="drop-text">Drag & Drop or Click to Upload</span>
+        <input type="file" name="image" id="file-input" accept="image/*" hidden>
+        <img id="preview" alt="Preview">
+      </div>
+
+      <button type="submit">💾 Save Product</button>
+    </form>
+  </div>
+
+  <script>
+    const dropZone = document.getElementById("drop-zone");
+    const fileInput = document.getElementById("file-input");
+    const preview = document.getElementById("preview");
+    const dropText = document.getElementById("drop-text");
+
+    dropZone.addEventListener("click", () => fileInput.click());
+    dropZone.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      dropZone.classList.add("dragover");
+    });
+    dropZone.addEventListener("dragleave", () => {
+      dropZone.classList.remove("dragover");
+    });
+    dropZone.addEventListener("drop", (e) => {
+      e.preventDefault();
+      fileInput.files = e.dataTransfer.files;
+      updatePreview(fileInput.files[0]);
+      dropZone.classList.remove("dragover");
+    });
+    fileInput.addEventListener("change", () => {
+      if (fileInput.files.length > 0) {
+        updatePreview(fileInput.files[0]);
+      }
+    });
+    function updatePreview(file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        preview.src = e.target.result;
+        preview.style.display = "block";
+        dropText.style.display = "none";
+      };
+      reader.readAsDataURL(file);
+    }
+  </script>
+</body>
+</html>

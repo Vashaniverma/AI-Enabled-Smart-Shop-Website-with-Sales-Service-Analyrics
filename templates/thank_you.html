@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You | Shree Sai Home Appliances</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff; /* White background */
+      color: #1e293b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .thankyou-container {
+      background: #e0f2fe; /* Light blue card */
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+      width: 420px;
+    }
+    h1 {
+      color: #0369a1; /* Darker blue */
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 10px 0;
+      color: #334155; /* Slate gray */
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      background: #0284c7; /* Blue button */
+      color: #ffffff;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #0369a1; /* Darker hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="thankyou-container">
+    <h1>🎉 Thank You!</h1>
+    <p>Your service order has been placed successfully.</p>
+    <p>Our team will contact you soon to confirm your booking.</p>
+    <a href="{{ url_for('index') }}" class="btn">Go to Home</a>
+  </div>
+</body>
+</html>
